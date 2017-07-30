@@ -1,0 +1,287 @@
+html, body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Inconsolata', monospace;
+  font-: normal;
+  font-size: 16px;
+  letter-spacing: .1em;
+}
+
+#container {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 700px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px 0 20px;
+}
+
+#header {
+  margin: .3rem;
+  padding: 1rem;
+}
+
+#links {
+  display: -moz-box;
+  display: -webkit-box;
+  width: 100%;
+}
+
+.linksbox {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  margin: .3rem;
+  padding: .6rem;
+}
+
+.linksbox a {
+  display: block;
+  padding: .4rem;
+  text-decoration: none;
+}
+
+.linksbox a:hover {
+  opacity: 0.75;
+}
+
+h3 {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.2rem;
+}
+
+.linksbox h3 {
+  display: block;
+  margin-bottom: .8rem;
+}
+
+.cyan {
+  padding: 0;
+}
+
+.blue {
+  padding: 0;
+}
+
+.green {
+  padding: 0;
+}
+
+.pink {
+  padding: 0;
+}
+
+.red {
+  padding: 0;
+}
+
+a.red:before {
+  content: '> ';
+  animation: none;
+}
+
+form {
+  display: inline;
+}
+
+input {
+  display: inline;
+  width: 80%;
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+#colours {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10rem 2rem 2rem 10rem;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+a.button {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: .75rem;
+  opacity: .1;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border-radius: 100%;
+  border: none;
+  filter: grayscale(100%);
+}
+
+.button:hover {
+  opacity: 1;
+  border-radius: 0;
+  transform: rotate(-180deg);
+  cursor: pointer;
+}
+
+#colours:hover .button {
+  filter: grayscale(0%);
+}
+
+
+.on-click--active {
+  display: none;
+}
+/* OTHER THEMES */
+
+.col-1 {
+  background: #9aedfe;
+}
+
+.col-2 {
+  background: green;
+}
+
+.col-3 {
+  background: #ff5c57;
+}
+
+/* THEMES LABELS
+a.col-1.button:after {
+    content: 'default';
+    display: block;
+    position: absolute;
+    color: white;
+    transform: rotate(180deg);
+    top: 2rem;
+    opacity: 0;
+    display: none;
+    transition: all 2s ease-in-out;
+  }
+
+a.col-1.button:hover:after {
+  opacity: 1;
+  display: block;
+  }
+
+  a.col-2.button:after {
+      content: 'hacker';
+      display: block;
+      position: absolute;
+      color: white;
+      transform: rotate(180deg);
+      top: 2rem;
+      opacity: 0;
+      display: none;
+      transition: all 2s ease-in-out;
+    }
+
+  a.col-2.button:hover:after {
+    opacity: 1;
+    display: block;
+    }
+
+    a.col-3.button:after {
+        content: 'downwell';
+        display: block;
+        position: absolute;
+        color: white;
+        transform: rotate(180deg);
+        top: 2rem;
+        opacity: 0;
+        display: none;
+        transition: all 2s ease-in-out;
+      }
+
+    a.col-3.button:hover:after {
+      opacity: 1;
+      display: block;
+      }
+*/
+
+/* Blink animation */
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Mobile devices */
+
+@media screen and (max-width:750px) {
+  #header {
+    width: 80vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .linksbox {
+    width: 80vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80vw;
+    padding: 0;
+  }
+}

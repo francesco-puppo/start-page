@@ -1,0 +1,55 @@
+:root {
+  var-MainColor: black;
+  --main-color: black;
+  --second-color: black;
+  --cyan-color: green;
+  --blue-color: green;
+  --green-color: green;
+  --pink-color: green;
+  --red-color: green;
+  --white-color: green;
+}
+
+html, body {
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+#header, .linksbox {
+  background: var(--second-color);
+  border-left: var(--cyan-color) solid .1rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.cyan {
+  color: var(--cyan-color);
+}
+
+.blue {
+  color: var(--blue-color);
+}
+
+.green, .linksbox a:hover::before {
+  color: var(--green-color);
+}
+
+.pink {
+  color: var(--pink-color);
+}
+
+.red {
+  color: var(--red-color);
+}
+
+input {
+  color: var(--white-color);
+}
+
+.linksbox a:hover:before {
+  content: '// ';
+}
+
+a.red:before {
+  animation: blink-animation 1s steps(5, start) infinite;
+}

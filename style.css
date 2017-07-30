@@ -104,7 +104,6 @@ form {
 
 input {
   display: inline;
-  width: 80%;
   border: none;
   background: none;
   font-size: 1.1rem;
@@ -240,7 +239,7 @@ a.col-1.button:hover:after {
 
 @media screen and (max-width:750px) {
   #header {
-    width: 80vw;
+    width: 78vw;
     margin-right: 0;
     margin-left: 0;
   }

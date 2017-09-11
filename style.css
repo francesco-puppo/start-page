@@ -166,6 +166,10 @@ a.button {
   background: #ff5c57;
 }
 
+input[type="text"] {
+  width: 83%;
+}
+
 /* THEMES LABELS
 a.col-1.button:after {
     content: 'default';

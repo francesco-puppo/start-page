@@ -1,5 +1,5 @@
 # Start-Page
-Just a quick edit of Jarvvski [Start-Page](https://github.com/Jarvvski/Start-Page).
+A revisit of Jarvvski [Start-Page](https://github.com/Jarvvski/Start-Page).
 
 ![default](https://raw.githubusercontent.com/francesco-puppo/start-page/master/screenshots/start-page-01.PNG)
 
